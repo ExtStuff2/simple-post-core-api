@@ -31,7 +31,7 @@ public class PostController {
         return postService.getPostById(postId);
     }
 
-    @GetMapping("/check-status-{postId}")
+    @GetMapping("/check/status/{postId}")
     public String getPostStatusById(@PathVariable String postId) {
         return postService.getPostStatusById(postId);
     }
